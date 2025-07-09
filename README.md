@@ -20,7 +20,7 @@ This project implements a **Conditional Denoising Diffusion Probabilistic Model 
 
 ---
 
-## 🚀 How to Run in Colab
+## How to Run in Colab
 
 1️⃣ **Install Required Packages**
 
