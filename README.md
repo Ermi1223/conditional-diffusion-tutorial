@@ -1,14 +1,15 @@
 ---
 
-# MNIST Conditional Diffusion with Class and Text Conditioning
+# MNIST and CIFAR-10 Conditional Diffusion with Class and Text Conditioning
 
-This project implements a **Conditional Denoising Diffusion Probabilistic Model (DDPM)** on the **MNIST** dataset using both **class labels** and **text prompts** for conditional image generation. The model is built and trained in **Google Colab**, with visualization tools and advanced experiments such as **interpolation** and **accelerated sampling**.
+This project implements a **Conditional Denoising Diffusion Probabilistic Model (DDPM)** on the **MNIST** and **CIFAR-10** dataset using both **class labels** and **text prompts** for conditional image generation. The model is built and trained in **Google Colab**, with visualization tools and advanced experiments such as **interpolation** and **accelerated sampling**.
 
 ---
 
 ## 📋 Project Overview
 
 * **Dataset**: MNIST (Handwritten digits 0–9)
+* * **Dataset**: CIFAR-10 
 * **Model**: Conditional U-Net with attention blocks
 * **Conditioning**:
 
@@ -73,7 +74,7 @@ This project implements a **Conditional Denoising Diffusion Probabilistic Model 
 
 ---
 
-## 📝 Key Features
+## Key Features
 
 | Feature                       | Description                                           |
 | ----------------------------- | ----------------------------------------------------- |
@@ -86,20 +87,7 @@ This project implements a **Conditional Denoising Diffusion Probabilistic Model 
 
 ---
 
-## 🎯 Task Requirements Coverage
-
-| Task Requirement                         | Status        |
-| ---------------------------------------- | ------------- |
-| Conditional Architecture (class/text)    | ✅ Implemented |
-| Forward Diffusion Process                | ✅ Implemented |
-| Reverse Denoising Process                | ✅ Implemented |
-| Visualization of Sampling                | ✅ Implemented |
-| Prompt Engineering Experiments           | ✅ Implemented |
-| Controllable Generation (guidance scale) | ✅ Implemented |
-
----
-
-## 🔑 Notable Modifications for MNIST
+## Notable Modifications for MNIST
 
 * Grayscale (1-channel) images and outputs
 * Smaller U-Net for efficiency (64/128/256 channels)
@@ -109,7 +97,7 @@ This project implements a **Conditional Denoising Diffusion Probabilistic Model 
 
 ---
 
-## 📊 Example Outputs
+## Example Outputs
 
 * Digit generation: `sample(model, class_label=5)`
 * Text prompt: `sample(model, text_prompt="a handwritten six")`
